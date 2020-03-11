@@ -8,7 +8,7 @@
     <header>
       <nav>
         <div>
-          <img src="images/logo.svg" alt="Логотип Техномарта">
+          <img src="img/logo.svg" alt="Логотип Техномарта">
           <form class="search" method="POST" action="https://echo.htmlacademy.ru">
             <input id="search" type="text" name="search" placeholder="Поиск:">
           </form>
@@ -20,17 +20,21 @@
         <p>+7 (812) 555-05-55</p>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <ul>
-          <button type="button">Войти</button>
-          <button type="button">Регистрация</button>
+          <a href="login.html">
+            Войти
+          </a>
+          <a href="registration.html">
+            Регистрация
+          </a>
         </ul>
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Компания</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
+          <li><a href="news.html">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -56,6 +60,12 @@
         <li>
           <h3>Доставка</h3>
           <a href="#">Бесплатно</a>
+        </li>
+        <li>
+          <figure>
+            <img src="img/slider1.jpg" width="620" height="266" alt="Дрели">
+            <img src="img/slider2.jpg" width="620" height="266" alt="Перфораторы">
+          </figure>
         </li>
       </ul>
       <section>
@@ -128,6 +138,14 @@
           </ul>
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          <h3>Гарантия</h3>
+          <p>Если купленный у нас товар поломается или заискрит, 
+            а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+            Дом уж восстановите как-нибудь сами.</p>
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! 
+          Кредитные консультанты придут вам на помощь.</p>
+          <a href="#">Отправить заявку</a>
       </section>
       <section>
         <h2>Компания "Техномарт"</h2>
@@ -143,8 +161,8 @@
       <section>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img scr="images/map.png" alt="Схема проезда">
-        <button>Заблудились? Напишите нам!</button>
+        <img src="img/map.png" alt="Схема проезда">
+        <button type="button">Заблудились? Напишите нам!</button>
       </section>
     </main>
     <footer>
@@ -174,5 +192,23 @@
       <p>Обратная связь: mail@htmlacademy.ru</p>
       <p>Разработано - htmlacademy.ru</p>
     </footer>
+    <section>
+      <h2>Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru method="post">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <input type="text" name="text" id="text" value="" placeholder="В свободной форме">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
