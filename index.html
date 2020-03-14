@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <div>
-          <img src="img/logo.svg" alt="Логотип Техномарта">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" alt="Логотип Техномарта">
+          </a>
           <form class="search" method="POST" action="https://echo.htmlacademy.ru">
             <input id="search" type="text" name="search" placeholder="Поиск:">
           </form>
@@ -19,15 +24,15 @@
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <p>+7 (812) 555-05-55</p>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <ul>
-          <a href="login.html">
+        <ul class="user-navigation">
+          <a class="login-link" href="login.html">
             Войти
           </a>
-          <a href="registration.html">
+          <a class="reg-link" href="registration.html">
             Регистрация
           </a>
         </ul>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -38,36 +43,38 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Интернет-магазин "Техномарт"</h1>
-      <ul>
-        <li>
-          <h3>Материалы</h3>
-          <a href="#">На любой вкус</a>
-        </li>
-        <li>
-          <h3>Инструмент</h3>
-          <a href="#">На все случаи</a>
-        </li>
-        <li>
-          <h3>Техника</h3>
-          <a href="#">Для стройки</a>
-        </li>
-        <li>
-          <h3>Скидки 50%</h3>
-          <a href="#">На 350 товаров</a>
-        </li>
-        <li>
-          <h3>Доставка</h3>
-          <a href="#">Бесплатно</a>
-        </li>
-        <li>
-          <figure>
-            <img src="img/slider1.jpg" width="620" height="266" alt="Дрели">
-            <img src="img/slider2.jpg" width="620" height="266" alt="Перфораторы">
-          </figure>
-        </li>
-      </ul>
+    <main class="container">
+      <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
+      <section class="group-blocks">
+        <ul class="block-list">
+          <li class="block-item">
+            <h3>Материалы</h3>
+            <a href="#">На любой вкус</a>
+          </li>
+          <li class="block-item">
+            <h3>Инструмент</h3>
+            <a href="#">На все случаи</a>
+          </li>
+          <li class="block-item">
+            <h3>Техника</h3>
+            <a href="#">Для стройки</a>
+          </li>
+          <li class="block-item">
+            <h3>Скидки 50%</h3>
+            <a href="#">На 350 товаров</a>
+          </li>
+          <li class="block-item">
+            <h3>Доставка</h3>
+            <a href="#">Бесплатно</a>
+          </li>
+          <li class="block-item">
+            <figure>
+              <img src="img/slider1.jpg" width="620" height="266" alt="Дрели">
+              <img src="img/slider2.jpg" width="620" height="266" alt="Перфораторы">
+            </figure>
+          </li>
+        </ul>
+    </section>
       <section>
         <h2>Популярные товары</h2>
         <a href="#">Все популярные товары</a>

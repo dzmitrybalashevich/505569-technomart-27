@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 17px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background-color: #f4f7f9;
+}
