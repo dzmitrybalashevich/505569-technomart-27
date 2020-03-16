@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -151,58 +152,67 @@
         </section>
       </div>
       <div class="main__services">
-        <section class="services-list">
-          <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <section class="services">
+          <div class="services__header">
+            <h2>Сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <ul>
-              <li>Доставка</li>
-              <li>Гарантия</li>
-              <li>Кредит</li>
+          </div>
+            <ul class="services-list">
+              <li class="services-list__item1">Доставка</li>
+              <li class="services-list__item2">Гарантия</li>
+              <li class="services-list__item3">Кредит</li>
             </ul>
             <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            <p>Мы с удовольствием доставим ваш товар прямо <br> 
+            к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!</p>
             <h3>Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, 
-              а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+            <p>Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгоранием,<br>
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+              сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.</p>
             <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! 
+            <p>Залезть в долговую яму стало проще!<br> 
             Кредитные консультанты придут вам на помощь.</p>
             <a href="#">Отправить заявку</a>
         </section>
       </div>
-      <section class="about">
-        <h2>Компания "Техномарт"</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
-        <p>Мы можем доставить ваш товар в самый отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#">Подробнее о компании</a>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map.png" alt="Схема проезда">
-        <button type="button">Заблудились? Напишите нам!</button>
-      </section>
+      <div class="main__about">
+        <section class="about">
+          <h2>Компания "Техномарт"</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
+          <p>Мы можем доставить ваш товар в самый отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="about__delivery-list">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#">Подробнее о компании</a>
+        </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <img src="img/map.png" alt="Схема проезда">
+          <button type="button">Заблудились? Напишите нам!</button>
+        </section>
+      </div>
     </main>
     <footer>
       <section class="footer-nav">
         <img src="images/logo-footer.svg" alt="Логотип Техномарта">
-        <ul>
+        <ul class="footer-nav__top">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>+7 (812) 555-05-55</p>
-        <ul>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7 (812) 555-05-55</p>
+        <ul class="footer-nav__bottom">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
@@ -217,8 +227,8 @@
           <li>FB</li>
           <li>inst</li>
         </ul>
-        <p>Обратная связь: <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p>Разработано - <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+        <p>Обратная связь:<br> <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p>Разработано -<br> <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
       </section>
     </footer>
     <section class="form-back">

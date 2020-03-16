@@ -35,6 +35,13 @@ header {
     background-color: #f4f7f9;
 }
 
+.main-header-logo {
+    width: 220px;
+    height: 47px;
+    box-shadow: inset 0px -5px 0 0 #0000003d;
+    background-color: #ee3643;
+}
+
 .header__menu {
     font-size: 17px;
     color: #ffffff;
@@ -46,28 +53,10 @@ header {
     color: #ffffff;
 }
 
-.services-list {
+.services {
     text-align: left;
 
     background-color: #f4f7f9;
-}
-
-.footer-nav {
-    font-size: 18px;
-    color: #f3f7f9;
-
-    background-color: #32425c;
-}
-
-.footer-contacts {
-    font-size: 16px;
-    color: #ffffff;
-
-    background-color: #293449;
-}
-
-.form-back {
-    
 }
 
 .site-navigation,
@@ -77,6 +66,11 @@ header {
 
 .site-navigation a {
     color: #ffffff;
+    
+    background-color: #32425c;
+    width: 127px;
+    height: 60px;
+    box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .user-navigation a {
@@ -140,6 +134,7 @@ header {
     background-color: #ffffff;
 
     text-align: center;
+    font-family: 'PT Sans';
 }
 
 .goods-list h3 {
@@ -207,4 +202,155 @@ header {
     height: 145px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
+}
+
+.services__header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.main__services p {
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+    font-weight: normal;
+    font-family: 'PT sans';
+}
+
+.services__header p {
+    width: 398px;
+    height: 37px;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.main__services h3 {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    color: #32425c;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.main__about h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.main__about p {
+    font-family: 'PT Sans';
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about__delivery-list {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+.main__about a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    width: 220px;
+    height: 38px;
+}
+
+.main__about button {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #ee3643;
+    width: 220px;
+    height: 38px;
+
+    border: solid 1px #eaeaea;
+    border-radius: 4px;
+}
+
+.footer-nav {
+    background-color: #32425c;
+}
+
+.footer-nav p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    font-weight: normal;
+    color: #f3f7f9;
+}
+
+.footer-nav__top {
+    list-style: none;
+}
+
+.footer-nav__top a{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #f1f5f7;
+}
+
+.footer-nav__bottom {
+    list-style: none;
+}
+
+.footer-nav__bottom a {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #ffd180;
+}
+
+.footer-contacts {
+    font-size: 16px;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.footer-contacts a {
+    color: #ffd180;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: underline;
+}
+
+.footer-contacts a:active {
+    color: #ee3643;
+    text-decoration: none;
+}
+.button-back button {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    width: 460px;
+    height: 38px;
+    background-color: #ee3643;
 }
