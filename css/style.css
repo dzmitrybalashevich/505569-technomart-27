@@ -7,19 +7,204 @@ body {
     line-height: 24px;
     font-weight: 700;
     color: #000000;
-    text-transform: uppercase;
+    text-transform: none;
 
     background-color: #ffffff;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 a {
     text-decoration: none;
 }
 
-.main-navigation {
+header {
     font-size: 17px;
     line-height: 20px;
     color: #ffffff;
 
     background-color: #f4f7f9;
+}
+
+.header__menu {
+    font-size: 17px;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.header__menu a {
+    color: #ffffff;
+}
+
+.services-list {
+    text-align: left;
+
+    background-color: #f4f7f9;
+}
+
+.footer-nav {
+    font-size: 18px;
+    color: #f3f7f9;
+
+    background-color: #32425c;
+}
+
+.footer-contacts {
+    font-size: 16px;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.form-back {
+    
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #ffffff;
+}
+
+.user-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #1d2739;
+}
+
+.site-navigation a:active {
+    color: #ffffff80;
+}
+
+.block-list {
+    color: #ffffff;
+    list-style: none;
+}
+.block-list h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.block-list a {
+    color: #ffffff;
+}
+
+.goods-list {
+    list-style: none;
+}
+
+.popular-goods__header {
+    width: 940px;
+    height: 89px;
+    background-color: #f9f5f0;
+}
+
+.popular-goods__header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.popular-goods__header a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff; 
+    
+    width: 253px;
+    height: 38px;
+    background-color: #ee3643;
+}
+
+.list-item {
+    width: 220px;
+    height: 318px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.goods-list h3 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: bold;
+
+    width: 155px;
+    height: 33px;
+    padding: 35px; /*исправить позже после разметки блока*/
+}
+
+.list-item__old-price {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+.list-item__price {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: red;
+}
+
+.brands-list {
+    list-style: none;
+}
+
+.popular-brands__header {
+    width: 940px;
+    height: 89px;
+    background-color: #f9f5f0;
+}
+
+.popular-brands__header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.popular-brands__header a {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    width: 253px;
+    height: 38px;
+    background-color: #ee3643 ;
+}
+
+.brands-list .brand-item {
+    width: 220px;
+    height: 145px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
 }
