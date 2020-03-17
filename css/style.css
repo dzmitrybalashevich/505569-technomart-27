@@ -194,7 +194,7 @@ a {
     font-size: 17px;
     font-weight: bold;
     text-align: center;
-    line-height: 18px;
+    line-height: 38px;
     color: #ffffff;
 
 
@@ -500,4 +500,48 @@ a {
 
 .filter-input:disabled + label {
   color: #00000066;
+}
+
+.page-select {
+    list-style: none;
+}
+
+.page-select li {
+    width: 38px;
+    height: 38px;
+    border: solid 2px #e5e5e5;
+}
+
+.page-select li:last-child {
+    width: 140px;
+    height: 38px;
+}
+
+.page-select a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: normal;
+}
+.page__active {
+    background-color: #ee3643;
+}
+
+.page__active a {
+    color: #ffffff;
+}
+
+.services__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.services__text {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
 }
