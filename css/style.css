@@ -143,9 +143,10 @@ header {
     color: #000000;
     font-weight: bold;
 
+
     width: 155px;
     height: 33px;
-    padding: 35px; /*исправить позже после разметки блока*/
+    padding: 0px 32px 0px 33px; /*исправить позже после разметки блока*/
 }
 
 .list-item__old-price {
@@ -164,7 +165,10 @@ header {
     line-height: 18px;
     color: #ffffff;
 
-    background-color: red;
+    background-image: url(/img/price-button.svg);
+    width: 141px;
+    height: 38px;
+    margin: 0px 36px 21px 43px;
 }
 
 .brands-list {
