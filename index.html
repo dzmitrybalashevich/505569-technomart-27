@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="header__menu">
         <a class="main-header-logo">
           <img src="img/logo.svg" alt="Логотип Техномарта">
@@ -21,11 +21,11 @@
           <a href="#">Корзина</a>
           <a href="#">Оформить заказ</a>
       </div>
-        <div class="header__">
+        <div class="header__center">
           <p class="nav__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <p class="nav__tel">+7 (812) 555-05-55</p>
-          <p class="">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <ul class="user-navigation">
+          <p class="nav__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <ul class="user-navigation-auth">
             <li>
               <a class="login-link" href="login.html">
                 Войти
@@ -163,11 +163,13 @@
               <li class="services-list__item2">Гарантия</li>
               <li class="services-list__item3">Кредит</li>
             </ul>
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо <br> 
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!</p>
+            <article class="services__delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо <br> 
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!</p>
+            </article>
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгоранием,<br>
@@ -202,7 +204,7 @@
     </main>
     <footer>
       <section class="footer-nav">
-        <img src="images/logo-footer.svg" alt="Логотип Техномарта">
+        <img src="img/logo.svg" alt="Логотип Техномарта" width="138" height="23">
         <ul class="footer-nav__top">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -222,10 +224,10 @@
       <section class="footer-contacts">
         <p>&copy; 2010-2019 Компания "Техномарт"<br>
         Все права защищены</p>
-        <ul>
-          <li>VK</li>
-          <li>FB</li>
-          <li>inst</li>
+        <ul class="contacts__social">
+          <li class="social__vk"><img src="/img/vk-icon.svg" alt="VK>"</li>
+          <li class="social__fb"><img src="/img/fb-icon.svg" alt="Facebook"></li>
+          <li class="social__inst"><img src="/img/insta-icon.svg" alt="Instagram"></li>
         </ul>
         <p>Обратная связь:<br> <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
         <p>Разработано -<br> <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
