@@ -33,24 +33,42 @@ a {
     color: #ffffff;
 
     background-color: #f4f7f9;
+
+    display: block;
+    width: auto;
+    height: 320px;
 }
 
 .main-header-logo {
-    width: 220px;
-    height: 47px;
+    width: 109px;
+    height: 19px;
     box-shadow: inset 0px -5px 0 0 #0000003d;
     background-color: #ee3643;
+
+    margin: 0 0 0 130px;
+    padding: 13px 56px 15px 55px;
 }
+
+/*.main-header-logo img {
+    margin: 13px 56px 15px 55px;
+}*/
 
 .header__menu {
     font-size: 17px;
     color: #ffffff;
 
     background-color: #293449;
+    height: 42px;
+
+    display: flex;
 }
 
 .header__menu a {
     color: #ffffff;
+}
+
+.header__center {
+    display: flex;
 }
 
 .nav__description {
@@ -62,6 +80,9 @@ a {
 
     width: 196px;
     height: 60px;
+
+    margin-top: 49px;
+    margin-left: 183px;
 }
 
 .nav__tel {
@@ -85,15 +106,36 @@ a {
 .site-navigation,
 .user-navigation {
     list-style: none;
+    display: flex;
 }
 
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+
+    width: 940px;
+    height: 60px;
+}
+.site-navigation {
+    width: auto;
+    height: auto;
+}
 .site-navigation a {
     color: #ffffff;
+    font-weight: normal;
     
     background-color: #32425c;
-    width: 127px;
-    height: 60px;
+    min-width: 121px;
+    height: 12px;
     box-shadow: inset 0px -5px 0 0 #293449;
+    padding-top: 22px;
+    padding-bottom: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    display: flex;
+    box-sizing: border-box;
 }
 
 .user-navigation-auth a {
@@ -118,6 +160,11 @@ a {
     color: #ffffff80;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .block-list {
     color: #ffffff;
     list-style: none;
@@ -133,6 +180,9 @@ a {
 
 .goods-list {
     list-style: none;
+    display: flex;
+    padding-left: 0px;
+    
 }
 
 .popular-goods__header {
@@ -146,6 +196,7 @@ a {
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
+    display: inline;
 }
 
 .popular-goods__header a {
@@ -157,16 +208,25 @@ a {
     width: 253px;
     height: 38px;
     background-color: #ee3643;
+    display: inline;
 }
 
 .list-item {
-    width: 220px;
+    width: 200px;
     height: 318px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-right: 20px;
+    flex-grow: 1;
 
     text-align: center;
     font-family: 'PT Sans';
+}
+
+.list-item:last-child {
+    margin-right: 0px;
 }
 
 .goods-list h3 {
