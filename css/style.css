@@ -21,10 +21,22 @@ body {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 a {
     text-decoration: none;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.header__menu-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
 }
 
 .main-header {
@@ -34,9 +46,8 @@ a {
 
     background-color: #f4f7f9;
 
-    display: block;
     width: auto;
-    height: 320px;
+    min-height: 320px;
 }
 
 .main-header-logo {
@@ -45,7 +56,6 @@ a {
     box-shadow: inset 0px -5px 0 0 #0000003d;
     background-color: #ee3643;
 
-    margin: 0 0 0 130px;
     padding: 13px 56px 15px 55px;
 }
 
@@ -59,16 +69,37 @@ a {
 
     background-color: #293449;
     height: 42px;
-
-    display: flex;
 }
 
 .header__menu a {
     color: #ffffff;
 }
 
+.form-search {
+    width: 270px;
+    font-weight: 400;
+    height: 100%;
+
+    border: none;
+    padding: 0;
+
+    background-image: url(/img/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 17px 50%;
+    background-color: inherit;
+
+    color: #ffffff;
+}
+
+.form-search::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
 .header__center {
     display: flex;
+
+    justify-content: space-between;
 }
 
 .nav__description {
@@ -81,8 +112,6 @@ a {
     width: 196px;
     height: 60px;
 
-    margin-top: 49px;
-    margin-left: 183px;
 }
 
 .nav__tel {
@@ -218,16 +247,17 @@ a {
     background-color: #ffffff;
     margin-top: 21px;
     margin-bottom: 21px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     flex-grow: 1;
+    justify-content: space-between;
 
     text-align: center;
     font-family: 'PT Sans';
 }
 
-.list-item:last-child {
+/*.list-item:last-child {
     margin-right: 0px;
-}
+}*/
 
 .goods-list h3 {
     font-size: 18px;
@@ -294,7 +324,11 @@ a {
     background-color: #ee3643 ;
 }
 
-.brands-list .brand-item {
+.brands-list {
+    display: flex;
+}
+
+.brand-item {
     width: 220px;
     height: 145px;
     border: solid 1px #eaeaea;
